@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BudgetTracker.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BudgetTracker.UI"
+    xmlns:pages="clr-namespace:BudgetTracker.UI.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab>
+            <ShellContent
+                Title="Overview"
+                ContentTemplate="{DataTemplate pages:OverviewPage}"
+                Route="Overview" />
+            <ShellContent
+                Title="Budget"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="Budget" />
+            <ShellContent
+                Title="Budget"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="Budget" />
+            <ShellContent
+                Title="Budget"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="Budget" />
+            <ShellContent
+                Title="Budget"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="Budget" />
+        </Tab>
+    </TabBar>
+
+</Shell>
