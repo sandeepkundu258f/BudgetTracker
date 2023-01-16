@@ -3,32 +3,46 @@
     x:Class="BudgetTracker.UI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BudgetTracker.UI"
     xmlns:pages="clr-namespace:BudgetTracker.UI.Pages"
+    xmlns:root="clr-namespace:BudgetTracker.UI"
     Shell.FlyoutBehavior="Disabled">
+    <!--<Shell.TitleView>
+        <HorizontalStackLayout>
+            
+            <Button Text="ADD1" Clicked="Button_Clicked" HorizontalOptions="End"></Button>
+            <Label>TEST</Label>
+            --><!--<Button Text="ADD3" Clicked="Button_Clicked" HeightRequest="50" WidthRequest="100" HorizontalOptions="End"></Button>--><!--
+        </HorizontalStackLayout>
+    </Shell.TitleView>-->
+    <Shell.TitleView>
+        <HorizontalStackLayout>
+            <Label TextColor="White" VerticalOptions="Center" FontSize="Title" FontAttributes="Bold">BudgetTracker</Label>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+    <!--<Shell.ToolbarItems>
+        <ToolbarItem x:Name="ProfileTbi" Text="Profile" Order="Secondary" Priority="2" />
+        <ToolbarItem x:Name="SettingsTbi" Text="Settings" Order="Secondary" Priority="2" Clicked="SettingsTbi_Clicked"/>
+        <ToolbarItem x:Name="ExitTbi" Text="Exit" Order="Secondary" Priority="2" />
+    </Shell.ToolbarItems>-->
 
     <TabBar>
-        <Tab>
+        <Tab Title="Menu">
+
             <ShellContent
                 Title="Overview"
                 ContentTemplate="{DataTemplate pages:OverviewPage}"
-                Route="Overview" />
+                Route="Overview-Page" />
+
             <ShellContent
                 Title="Budget"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="Budget" />
+                ContentTemplate="{DataTemplate pages:BudgetPage}"
+                Route="Budget-Page" />
+            
             <ShellContent
-                Title="Budget"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="Budget" />
-            <ShellContent
-                Title="Budget"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="Budget" />
-            <ShellContent
-                Title="Budget"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="Budget" />
+                Title="Statistics"
+                ContentTemplate="{DataTemplate pages:StatisticsPage}"
+                Route="Statistics-Page" />
         </Tab>
     </TabBar>
 

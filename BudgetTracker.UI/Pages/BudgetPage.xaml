@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BudgetTracker.UI.Pages.OverviewPage"
-             Title="Overview">
+             x:Class="BudgetTracker.UI.Pages.BudgetPage"
+             Title="BudgetPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="ProfileTbi" Text="Profile" Order="Secondary" Priority="1"/>
-        <ToolbarItem x:Name="SettingsTbi" Text="Settings" Order="Secondary" Priority="2" Clicked="SettingsTbi_Clicked"/>
-        <ToolbarItem x:Name="ExitTbi" Text="Exit" Order="Secondary" Priority="2" />
+        <ToolbarItem x:Name="ProfileTbi2" Text="Profile_new" Order="Secondary" Priority="2" />
     </ContentPage.ToolbarItems>
 
     <VerticalStackLayout>
-
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        
     </VerticalStackLayout>
-    
 </ContentPage>

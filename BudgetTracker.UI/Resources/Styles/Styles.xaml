@@ -350,6 +350,10 @@
         </Setter>
     </Style>
 
+    <!--<style name="MainTheme" parent="MainTheme.Base">
+        <item name="android:textColorSecondary">#54FF9F</item>
+    </style>-->
+
     <Style TargetType="Page" ApplyToDerivedTypes="True">
         <Setter Property="Padding" Value="0"/>
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
@@ -380,5 +384,8 @@
         <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
+
+    <!--<item name="android:textColorSecondary">@color/white</item>-->
+    
 
 </ResourceDictionary>
