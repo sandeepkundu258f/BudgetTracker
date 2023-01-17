@@ -16,7 +16,7 @@
     </Shell.TitleView>-->
     <Shell.TitleView>
         <HorizontalStackLayout>
-            <Label TextColor="White" VerticalOptions="Center" FontSize="Title" FontAttributes="Bold">BudgetTracker</Label>
+            <Label TextColor="White" VerticalOptions="Center" FontSize="Title" FontAttributes="Bold">Budget Tracker</Label>
         </HorizontalStackLayout>
     </Shell.TitleView>
 
